@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body{
+    background-image:url("infinity.jpg");
+    background-repeat: repeat, repeat;
+    /* width:10%; */
+    background-size: 1300px 700px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.custom-field{
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+
+.custom-field input{
+    padding: 12px;
+    width: 300px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px;
+    border: 1.5px solid gray;
+    outline-color: deepskyblue;
+}
+
+.custom-field .placeholder{
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top: 21px;
+    font-size: 10px;
+    color: #222;
+    padding: 5px;
+    background: transparent;
+}
+
+.message{
+    font-size: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(68, 0, 253);
+    position: relative;
+    top:-120px;
+}
+
+.success{
+    font-size: 18px;
+    margin-top: 15px;
+    color: seagreen;
+    font-weight: bold;
+    /* position: relative; */
+    /* top:-20px; */
+}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn{
+    /* border:2px solid red; */
+}
+
+
+.card-header{
+    color:white;
+}
+.card{
+    /* border:2px solid red; */
+    box-shadow: 0px 0px 20px 6px white;
+    background: transparent;
+
+    position: relative;
+    left:418px;
+    top:50px;
+}
+.btn1 {
+    position: relative;
+   top:-30px;
+   left:23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 10px 40px;
+    
+    background: black;
+    /* color:white; */
+    font-size: 16px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    overflow: hidden;
+    transition: 0.5s;
+    margin-left: 13%;
+    margin-right: 30%;
+    margin-top: -12px;
+    /* letter-spacing: 1px; */
+    cursor: pointer;
+}
+.btn1::before{
+    content:"";
+    background-image: conic-gradient(
+               rgb(18, 92, 252) 20deg,
+               transparent 120deg
+            );
+    animation: rotate 4s infinite linear;
+    width:500%;
+    height:500%;
+    /* transform:rotate(180deg); */
+    position: absolute;
+    /* border:2px solid red; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+@keyframes rotate{
+            
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+.btn1::after{
+    content:"Login";
+    background:black;
+    display:flex;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    /* font-weight: bold; */
+    /* border:2px solid red; */
+    width:94%;
+    height:88%;
+    position: absolute;
+    top:6%;
+    left:2.5%;
+
+}
+.btn2{
+    position:relative;
+    top:-20px;
+}
+.forgot{
+    position: relative;
+    color:white;
+    top:85px;
+    left:20px;
+    display: flex;
+    text-align:left;
+    justify-content: right;
+}
+#logo{
+    width: 130px;
+    height: 130px;
+    /* filter:invert(100%); */
+    display: flex;
+    position: relative;
+    top: -60px;
+    left:130px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 99;
+    /* border-bottom:2px solid rgb(33, 245, 13); */
+    box-shadow: 0px 0px 12px 4px white;
+    border-radius:100%;
+    transition:all 0.5s ease-in-out .3s;
+    animation: logo-flow 3s ease 2.8s 1 alternate;
+}
+@keyframes logo-flow{
+    0%{
+        box-shadow: none;
+    }
+    25%{
+        /* box-shadow: none; */
+        transform:rotate(360deg);
+        box-shadow: 0px 0px 50px 20px rgb(255, 251, 1);
+    }
+    50%{
+        /* box-shadow: 0px 0px 50px 20px rgb(140, 255, 46); */
+        box-shadow: none;
+    }
+    75%{
+        
+        box-shadow: 0px 0px 50px 20px rgb(140, 255, 46);
+    }
+    100%{
+        box-shadow: none;
+    }
+
+}
+ #logo:hover{
+    display: inline;
+    
+    width:130px;
+    height:130px;
+    /* border:3px solid red; */
+    
+    border-radius: 60%;
+    box-shadow: 0px 0px 70px 2px yellow;
+    filter:invert(100%);
+    /* transform: scale(2); */
+    transform:rotate(360deg);
+}
+.copy{
+    color:white;
+    text-align:center;
+    position:relative;
+    top:0px;
+    border:2px solid red;
+    
+    top:-15px;
+    /* background-color: black; */
+    
+}
+
+
+
+
+/* welcome */
+.goto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#site{
+    color:white;
+}
